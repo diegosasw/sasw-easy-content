@@ -1,6 +1,7 @@
 ﻿---
 title: How to Write Posts with Easy Content
 summary: This is a sample post that shows how to easily create content with Easy Content without worrying about style or html
+author: Diego
 languageCode: EN
 ---
 # Focus just on content
