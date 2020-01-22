@@ -1,0 +1,15 @@
+﻿@page
+@model Sasw.EasyContent.Razor.Pages.PostModel
+@{
+    ViewData["Title"] = "Post";
+}
+
+@section AdditionalMetadata {
+    <base href="https://localhost:5001/">
+}
+
+<h1>@Model.Title</h1>
+<h2>Published by @Model.Author</h2>
+<div class="sasw-post">
+    @Model.HtmlContent
+</div>
