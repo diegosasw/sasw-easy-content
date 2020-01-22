@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h1>POSTS</h1>
+@foreach (var postSummary in Model.PostSummaries)
+{
+    <div>
+        <a href="@postSummary.RelativePath">@postSummary.Title</a> published by @postSummary.Author
+        <span>---</span>
+    </div>
+}

@@ -26,6 +26,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sasw.EasyContent.UnitTests"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sasw.EasyContent.IntegrationTests", "test\Sasw.EasyContent.IntegrationTests\Sasw.EasyContent.IntegrationTests.csproj", "{BB0C6B17-77A0-47D0-8AB8-822426C08665}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{A0BF33C6-F0F9-4839-80DE-2855E81A7FF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sasw.EasyContent.Sample.Basic", "sample\Sasw.EasyContent.Sample.Basic\Sasw.EasyContent.Sample.Basic.csproj", "{9B1B49FD-5079-4AF5-8A52-105C9279C858}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +52,10 @@ Global
 		{BB0C6B17-77A0-47D0-8AB8-822426C08665}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB0C6B17-77A0-47D0-8AB8-822426C08665}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB0C6B17-77A0-47D0-8AB8-822426C08665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B1B49FD-5079-4AF5-8A52-105C9279C858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B1B49FD-5079-4AF5-8A52-105C9279C858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B1B49FD-5079-4AF5-8A52-105C9279C858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B1B49FD-5079-4AF5-8A52-105C9279C858}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,7 @@ Global
 		{2D398F75-5470-4AAF-AB01-EAD3609414F3} = {15652845-2A50-49CB-B45E-09AA24E72158}
 		{FCFA0AF5-751F-41E9-870C-305FC38F6C6C} = {5BBF9754-4A65-4F4D-ABED-CA1C0C987021}
 		{BB0C6B17-77A0-47D0-8AB8-822426C08665} = {B15F1BC0-4925-405B-B549-FDFADF9119C8}
+		{9B1B49FD-5079-4AF5-8A52-105C9279C858} = {A0BF33C6-F0F9-4839-80DE-2855E81A7FF8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B505205E-3CAF-4C46-B895-FB46745B5009}

@@ -16,6 +16,14 @@
     {
         public static IServiceCollection AddEasyContent(
             this IServiceCollection serviceCollection,
+            Func<IServiceProvider, FileProviderOptions> fileProviderOptionsRetriever)
+        {
+            PostOptions DefaultOptions(IServiceProvider sp) => PostOptions.Default;
+            return AddEasyContent(serviceCollection, DefaultOptions, fileProviderOptionsRetriever);
+        }
+
+        public static IServiceCollection AddEasyContent(
+            this IServiceCollection serviceCollection,
             Func<IServiceProvider, PostOptions> postOptionsRetriever,
             Func<IServiceProvider, FileProviderOptions> fileProviderOptionsRetriever)
         {
