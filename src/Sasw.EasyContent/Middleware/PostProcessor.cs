@@ -22,7 +22,7 @@
         {
             var postsRootFolder = _postConfiguration.PostRootFolder;
             var requestedPath = context.Request.Path.Value;
-            if (!requestedPath.StartsWith(postsRootFolder))
+            if (!requestedPath.StartsWith(postsRootFolder) || requestedPath.EndsWith(".png"))
             {
                 await _next(context);
                 return;
