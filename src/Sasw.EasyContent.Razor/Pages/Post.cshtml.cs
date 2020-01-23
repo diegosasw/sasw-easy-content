@@ -24,6 +24,7 @@
         {
             var relativePath = HttpContext.Items[Constants.RequestedPathParamsKey] as string;
             var post = await _blogQueryService.GetPost(relativePath);
+
             Title = post.Title;
             Author = post.Author;
             HtmlContent = new HtmlString(post.Content);

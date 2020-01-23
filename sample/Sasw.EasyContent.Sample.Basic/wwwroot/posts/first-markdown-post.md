@@ -12,6 +12,6 @@ For instance, each paragraph in markdown will be an html `<p>`.
 
 The links can be defined [like this](https://sunnyatticsoftware.com)
 
-Images can be referenced and displayed like this one ![alt logo here](posts/logo.png).
+Images can be referenced and displayed like this one ![alt logo here](img/logo.png).
 
 Another good thing is that you can use github or many other source control repositories to edit content because they usually understand markup. And if you also configure your CI/CD pipeline to automatically deploy changes you can add content to your site without any additional tool.
