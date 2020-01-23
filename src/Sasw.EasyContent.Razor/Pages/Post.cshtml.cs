@@ -4,6 +4,7 @@
     using Contracts.Services;
     using Microsoft.AspNetCore.Html;
     using Microsoft.AspNetCore.Mvc.RazorPages;
+    using System;
     using System.Threading.Tasks;
 
     public class PostModel
@@ -12,8 +13,8 @@
         private readonly IBlogQueryService _blogQueryService;
         public string Title;
         public string Author;
+        public DateTime PublishedOn;
         public HtmlString HtmlContent;
-        public string PublishedOn;
 
         public PostModel(IBlogQueryService blogQueryService)
         {
@@ -27,8 +28,8 @@
 
             Title = post.Title;
             Author = post.Author;
+            PublishedOn = post.PublishedOn;
             HtmlContent = new HtmlString(post.Content);
-            PublishedOn = post.PublishedOn.ToLongDateString();
         }
     }
 }

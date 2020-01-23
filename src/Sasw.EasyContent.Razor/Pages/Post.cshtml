@@ -4,10 +4,15 @@
     ViewData["Title"] = "Post";
 }
 
-
-
 <h1>@Model.Title</h1>
-<h2>Published by @Model.Author</h2>
+@if (!@Model.PublishedOn.Equals(DateTime.MinValue))
+{
+    <span>Published on @Model.PublishedOn.ToString("yyyy-MM-dd") </span>
+}
+@if (@Model.Author != null)
+{
+    <span>by @Model.Author</span>
+}
 <div>
     @Model.HtmlContent
 </div>
