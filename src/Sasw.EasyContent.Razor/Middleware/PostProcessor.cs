@@ -1,9 +1,11 @@
 ﻿namespace Sasw.EasyContent.Razor.Middleware
 {
-    using System.Threading.Tasks;
     using Configurations;
     using Contracts.Configurations;
     using Microsoft.AspNetCore.Http;
+    using System;
+    using System.IO;
+    using System.Threading.Tasks;
 
     public class PostProcessor
     {
@@ -20,9 +22,12 @@
 
         public async Task InvokeAsync(HttpContext context)
         {
-            var postsRootFolder = _postConfiguration.PostRootFolder;
+            var postsRootFolder = $"{_postConfiguration.PostRootFolder.TrimEnd('/')}/";
             var requestedPath = context.Request.Path.Value;
-            if (!requestedPath.StartsWith(postsRootFolder) || requestedPath.EndsWith(".png"))
+            var hasExtension = Path.HasExtension(requestedPath);
+            var isAsset = hasExtension && !requestedPath.EndsWith(_postConfiguration.PostExtension);
+            var isPost = requestedPath.StartsWith(postsRootFolder, StringComparison.InvariantCultureIgnoreCase) && !isAsset;
+            if (!isPost)
             {
                 await _next(context);
                 return;

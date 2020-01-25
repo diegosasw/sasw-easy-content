@@ -10,8 +10,8 @@
             new PostOptions
             {
                 PostExtension = ".md",
-                PostRootFolder = "/posts",
-                PostViewerRoute = "/Post"
+                PostRootFolder = "/blog",
+                PostViewerRoute = "/post"
             };
     }
 }
