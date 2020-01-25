@@ -42,7 +42,7 @@ stages:
             displayName: 'Run unit tests'
           - script: dotnet vstest test/*IntegrationTests/bin/Release/**/*IntegrationTests.dll
             displayName: 'Run integration tests'
-          - script: dotnet pack *.sln --configuration Release --output $(NUGET_FOLDER_NAME)
+          - script: dotnet pack *.sln --configuration Release --output $(NUGET_FOLDER_NAME) --include-symbols -p:SymbolPackageFormat=snupkg
             condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
             displayName: 'Create release nuGet'
           - script: dotnet pack *.sln --configuration Release --output $(NUGET_FOLDER_NAME) --version-suffix $(PRERELEASE_SUFFIX) --include-source --include-symbols -p:SymbolPackageFormat=snupkg

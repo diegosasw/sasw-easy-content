@@ -11,6 +11,6 @@
 		<PackageTags>SunnyAtticSoftware;EasyContent;Markdown;Parser;Blog;Content;StaticContent</PackageTags>
 		<License>MIT</License>
 		<Language>en</Language>
-		<PackageVersion>0.1.0</PackageVersion>
+		<PackageVersion>0.1.1</PackageVersion>
 	</PropertyGroup>
 </Project>
