@@ -1,4 +1,4 @@
-﻿namespace Sasw.EasyContent.Middleware
+﻿namespace Sasw.EasyContent.Razor.Middleware
 {
     using Microsoft.AspNetCore.Builder;
 

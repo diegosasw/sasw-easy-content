@@ -9,6 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A4B2C531-4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{54EEB678-3662-4945-A040-E558054F0462}"
 	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
+		dependencies.props = dependencies.props
+		Directory.Build.props = Directory.Build.props
 		global.json = global.json
 		LICENSE = LICENSE
 		README.md = README.md
@@ -28,7 +31,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sasw.EasyContent.Integratio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{A0BF33C6-F0F9-4839-80DE-2855E81A7FF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sasw.EasyContent.Sample.Basic", "sample\Sasw.EasyContent.Sample.Basic\Sasw.EasyContent.Sample.Basic.csproj", "{9B1B49FD-5079-4AF5-8A52-105C9279C858}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sasw.EasyContent.Sample.Basic", "sample\Sasw.EasyContent.Sample.Basic\Sasw.EasyContent.Sample.Basic.csproj", "{9B1B49FD-5079-4AF5-8A52-105C9279C858}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

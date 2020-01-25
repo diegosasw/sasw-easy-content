@@ -6,7 +6,7 @@ namespace Sasw.EasyContent.Sample.Basic
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
-    using Middleware;
+    using Razor.Middleware;
 
     public class Startup
     {

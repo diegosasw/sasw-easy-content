@@ -3,6 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <Title>$(AssemblyName)</Title>
+    <Description>Library to use markdown content with yaml frontmatter to create html static content</Description>
+    <ProjectUrl>$(Web)</ProjectUrl>
+    <Authors>$(Authors)</Authors>
+    <VersionPrefix>$(PackageVersion)</VersionPrefix>
+    <PackageLicenseExpression>$(License)</PackageLicenseExpression>
+    <PackageProjectUrl>$(Web)</PackageProjectUrl>
+    <NeutralLanguage>$(Language)</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>

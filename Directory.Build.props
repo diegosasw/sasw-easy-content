@@ -1,0 +1,7 @@
+﻿<Project>
+  <Import Project="dependencies.props" />
+
+  <!-- Disable Sourcelink on non Windows machines due to a bug -->
+  <!-- https://github.com/dotnet/sourcelink/issues/119 -->
+  
+</Project>

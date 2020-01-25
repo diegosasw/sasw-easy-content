@@ -1,9 +1,9 @@
-﻿namespace Sasw.EasyContent.Middleware
+﻿namespace Sasw.EasyContent.Razor.Middleware
 {
+    using System.Threading.Tasks;
     using Configurations;
     using Contracts.Configurations;
     using Microsoft.AspNetCore.Http;
-    using System.Threading.Tasks;
 
     public class PostProcessor
     {
